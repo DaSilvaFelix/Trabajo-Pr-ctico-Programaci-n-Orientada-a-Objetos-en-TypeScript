@@ -1,0 +1,29 @@
+{
+  "name": "tp-poo-en-typescript",
+  "version": "1.0.0",
+  "description": "\"# Trabajo-Pr-ctico-Programaci-n-Orientada-a-Objetos-en-TypeScript\"",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaSilvaFelix/Trabajo-Pr-ctico-Programaci-n-Orientada-a-Objetos-en-TypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaSilvaFelix/Trabajo-Pr-ctico-Programaci-n-Orientada-a-Objetos-en-TypeScript/issues"
+  },
+  "homepage": "https://github.com/DaSilvaFelix/Trabajo-Pr-ctico-Programaci-n-Orientada-a-Objetos-en-TypeScript#readme",
+  "devDependencies": {
+    "@types/nodemon": "^1.19.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
