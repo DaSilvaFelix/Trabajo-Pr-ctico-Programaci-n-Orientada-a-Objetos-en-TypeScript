@@ -1,10 +1,17 @@
-import type Equipo from "./Equipo.js";
+import { Equipo } from "./Equipo";
 
-export default abstract class Deporte {
-  constructor(public nombre: string, public maxPorEquipo: number) {}
+// Clase abstracta base para deportes
+export abstract class Deporte {
+  readonly nombre: string; // Nombre del deporte
+  readonly maxPorEquipo: number; // Límite de jugadores por equipo
 
-  validarEquipo(equipo: Equipo): boolean {
-    if (this.maxPorEquipo < equipo.cantidad) return true;
-    return false;
+  constructor(nombre: string, maxPorEquipo: number) {
+    this.nombre = nombre;
+    this.maxPorEquipo = maxPorEquipo;
+  }
+
+  // Valida si el equipo cumple con el límite permitido
+  validar(equipo: Equipo): boolean {
+    return equipo.cantidad <= this.maxPorEquipo;
   }
 }

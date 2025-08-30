@@ -1,7 +1,8 @@
-import Deporte from "./Deporte.js";
+import { Deporte } from "./Deporte";
 
-export default class Basquet extends Deporte {
-  constructor(nombre: string = "Basquet", maxPorEquipo: number = 5) {
-    super(nombre, maxPorEquipo);
+// subclase de Deporte que instancia su nombre como basquet y el limite es de 5
+export class Basquet extends Deporte {
+  constructor() {
+    super("Básquet", 5);
   }
 }
